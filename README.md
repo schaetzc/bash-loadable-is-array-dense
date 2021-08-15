@@ -39,6 +39,6 @@ cd examples/loadables/
 sed -i.bak 's/sleep/isdense/g' Makefile
 make isdense
 ```
-6. Load the builtin into you bash shell using `enable -f ./isdense isdense` or better `enable -f /full/path/to/isdense isdense`
+6. Load the builtin into your bash shell using `enable -f ./isdense isdense` or better `enable -f /full/path/to/isdense isdense`
 
 Of course the installation process and `isdense` itself depend on the version of bash. However, the relevant parts seem to be pretty stable. I was able to compile `isdense` for bash 3.2.57 (the version used on mac OS) and load the result into my bash 5.1.8.
