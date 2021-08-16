@@ -2,14 +2,14 @@
 
 `isdense` is a command you can load into your bash shell using `enable`.
 
-`isdense ARRAY` checks if the indexed array `ARRAY` is dense, or sparse when using `! isdense ARRAY`.  
-An indexed array is dense iff `ARRAY=("${ARRAY[@]}")` has no effect.
+`isdense a` checks if the indexed array `a` is dense, or sparse when using `! isdense a`.  
+An indexed array is dense iff `a=("${a[@]}")` has no effect.
 
 `isdense` prints nothing, unless there is an error. The exit status `$?` lets distinguish between dense and sparse arrays.
 
-Space and time complexity of `isdense ARRAY` is indepent of the size and structure of `ARRAY`. The check should be as fast as something like `a=1`.
+Space and time complexity of `isdense a` is indepent of the size and structure of `a`. The check should be as fast as something like `s=1`.
 
-`ARRAY` can also be an a nameref.
+`a` can also be a nameref.
 
 ## Examples
 
